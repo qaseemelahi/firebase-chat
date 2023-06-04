@@ -4,20 +4,31 @@ import "./App.css";
 import Welcome from "./pages/Welcome";
 import ChatBox from "./pages/Chat";
 import { useRegisterServiceWorker } from "./hooks/useRegisterServiceWorker";
+import NavBar from "./Components/Navbar";
 
 function App() {
-  const [user] = useAuthState(auth);
+  const [user,loading] = useAuthState(auth);
   useRegisterServiceWorker()
   return (
+    <>
+      <NavBar />
+
     <div className="App">
-      {!user ? (
+    {loading ? <h2>Loading...</h2> : 
+    <>
+     {!user ? (
         <Welcome />
       ) : (
         <>
          <ChatBox />
         </>
       )}
+    </>
+    }
+
+     
     </div>
+    </>
   );
 }
 

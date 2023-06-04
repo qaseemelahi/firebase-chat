@@ -21,8 +21,8 @@ input {
 .App {
   width: 100%;
   min-height: 100vh;
-  background-color: #1c2c4c;
-  color: #4c768d;
+  background-color: #f2f2f2;
+  color: #333333;
 }
 
 /* navbar */
@@ -31,8 +31,8 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #4c768d;
-  color: #242443;
+  background-color: #333333;
+  color: #ffffff;
   height: 60px;
 }
 .sign-in {
@@ -46,9 +46,9 @@ input {
 .sign-out {
   padding: 5px 10px;
   border-radius: 5px;
-  color: #88dded;
-  border: 1px solid #1c2c4c;
-  background-color: #1c2c4c;
+  color: #1c2c4c;
+  border: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
   font-weight: 600;
 }
 
@@ -57,7 +57,7 @@ input {
   padding: 30px;
   text-align: center;
   margin-top: 40px;
-  color: #7cc5d9;
+  color: #213038;
 }
 .welcome :is(h2, p, img) {
   margin-bottom: 20px;
@@ -71,11 +71,11 @@ input {
 .chat-bubble {
   border-radius: 20px 20px 20px 0;
   padding: 15px;
-  background-color: #7cc5d9;
-  color: #1c2c4c;
+  background-color: #a5cdec;
+  color: #5b4a4a;
   width: max-content;
   max-width: calc(100% - 50px);
-  box-shadow: -2px 2px 1px 1px #4c768d;
+  box-shadow: -2px 2px 1px 1px #333333;
   display: flex;
   align-items: flex-start;
   margin-bottom: 20px;
@@ -83,8 +83,8 @@ input {
 .chat-bubble.right {
   margin-left: auto;
   border-radius: 20px 20px 0 20px;
-  background-color: #fff;
-  box-shadow: -2px 2px 1px 1px #88dded;
+  background-color: #ffffff;
+  box-shadow: -2px 2px 1px 1px #1c2c4c;
 }
 .chat-bubble__left {
   width: 35px;
@@ -96,7 +96,7 @@ input {
   font-weight: bold;
   margin-bottom: 5px;
   font-size: 0.9rem;
-  color: #1c2c4c;
+  color: #333333;
 }
 .user-message {
   word-break: break-all;
@@ -112,7 +112,7 @@ input {
   bottom: 0px;
   width: 100%;
   padding: 20px 30px;
-  background-color: #4c768d;
+  background-color: #333333;
   display: flex;
 }
 .send-message > input {
@@ -121,24 +121,24 @@ input {
   border-radius: 5px 0 0 5px;
   border: none;
   flex-grow: 1;
-  background-color: white;
-  color: #1c2c4c;
+  background-color: #ffffff;
+  color: #333333;
   font-size: 1rem;
 }
-.send-message > input:placeholder {
-  color: #ddd;
+.send-message > input::placeholder {
+  color: #999999;
 }
 .send-message > :is(input, button):focus {
   outline: none;
-  border-bottom: 1px solid #7cc5d9;
+  border-bottom: 1px solid #dce5ea;
 }
 .send-message > button {
   width: 70px;
   height: 40px;
   padding: 5px 10px;
   border-radius: 0 5px 5px 0;
-  color: #242443;
-  border: 1px solid #7cc5d9;
-  background-color: #7cc5d9;
+  color: #ffffff;
+  border: 1px solid #060f14;
+  background-color: #091821;
   font-weight: 600;
 }

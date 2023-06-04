@@ -10,7 +10,8 @@ const Welcome = () => {
 
   return (
     <main className="welcome">
-      <p>Sign in with Google to chat with with your fellow React Developers.</p>
+      <p>Sign in with Google to chat with other users</p>
+      <p>to get the notification please enable notification from browser and your system setting</p>
       <button className="sign-in">
         <img
           onClick={googleSignIn}
